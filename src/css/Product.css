@@ -1,0 +1,941 @@
+*
+{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  
+}
+body
+{
+    padding: 0;
+   
+
+}
+
+/* START-1 */
+.abhay-1
+{
+    height: 105%;
+    display: flex;
+    flex-wrap: wrap;
+      
+}
+.abhay-2
+{
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    background-color: rgb(239, 239, 239);
+   text-align: center;
+   flex-wrap: wrap;
+}
+.abhay-3
+{
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    background-color: rgb(239, 239, 239);
+    flex-wrap: wrap;
+   
+}
+
+.abhay-box img
+{
+    border-radius: 20px;
+}
+.color-box
+{
+    height: 20%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 8px;
+
+
+}
+.colors
+{
+    border-radius: 20px;
+    height: 100%;
+    width: 18%;
+    
+}
+.colors img
+{
+    border-radius: 20px;
+   
+}
+
+.border-1
+{
+    border: 2px solid rgb(210, 210, 210);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+ flex-wrap: wrap;
+ height: 22%;
+}
+.border-1 h1
+{
+    margin-top: 10px;
+}
+.border-2
+{
+    border: 2px solid rgb(210, 210, 210);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+h2,h4
+{
+    margin: 5;
+}
+.border-3
+{
+    border: 2px solid rgb(210, 210, 210);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+#color
+{
+    margin: 1%;
+}
+.border-4
+{
+    border: 2px solid rgb(210, 210, 210);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+ 
+}
+.border-5
+{
+    border: 2px solid rgb(210, 210, 210);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+ 
+}
+.logitech-box
+{
+ /* border: 2px solid black; */
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+}
+.logitech-box-2
+{
+    /* border: 2px solid black; */
+    width: 20%;
+    height: 40vh;
+}
+
+.color-gola
+{
+    width: 13%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.abhay-3,h2,h4
+{
+
+}
+.gola
+{
+    height: 40px;
+    width: 40px;
+    /* border: 1px solid black; */
+    border-radius: 50px;
+    margin-top: 10px;
+    background-color: rgb(28, 28, 28);
+}
+.gola-2
+
+{
+    height: 40px;
+    width: 40px;
+    /* border: 1px solid rgba(0, 0, 0, 0.723); */
+    border-radius: 50px;
+    margin-top: 10px;
+    background-color: rgba(255, 0, 0, 0.834);
+}
+/* .gola:hover
+{
+    background-color: cadetblue;
+} */
+.icon-1
+{
+    color: rgb(0, 96, 45);
+    font-size: 20px;
+    height: 8%;
+}
+.add
+{
+    border: 1px solid rgb(229, 229, 229);
+    height: 8%;
+    
+}
+.add input
+{
+    padding: 10px;
+    border-radius: 15px;
+    width: 20%;
+    border: .5px solid rgb(196, 196, 196);
+    
+}
+.but-1 a
+{
+    width: 40%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 5px;
+    top: 10px;
+
+}
+.but-1  button
+{
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    width: 47%;
+    border-radius: 20px;
+    background-color: #8758ff;
+    color: white;
+    border: 0.5px solid #8758ff;
+}
+.but-1 button:hover{
+    background-color: #f2f2f2;
+    color: #8758ff;
+    border: 0.5px solid #8758ff;
+}
+.last-border
+{
+  border: 2px solid rgb(210, 210, 210);
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 5px;
+}
+.last-border p
+{
+    margin-top: 25px;
+}
+p,h3
+{
+    margin: 0%;
+}
+@media  only screen and (max-width:913px) {
+    .abhay-2
+{
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    background-color: rgb(239, 239, 239);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.nav {
+
+    background-color: #ffffffb5;
+    border: 1px solid rgb(221, 221, 221);
+   padding: 0px;
+   width: 100%;
+   flex-wrap: wrap;
+}
+.nav ul
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 10px;
+   }
+   .div_head
+{
+   flex-wrap: wrap;
+   display: flex;
+   margin-top: 0px; 
+  align-items: center;
+  position: relative;
+  right: 20px;
+  
+  
+}
+.div_head li a {
+    margin: 5px;
+}
+
+.button-1
+ {
+    margin-top: 0px;
+
+ }
+
+ .button-1 button
+ {
+
+    cursor: pointer;
+    padding: 3px;
+    width: 50px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255) ;
+    background-color:#8758ff;
+   border: none;
+   position: relative;
+   left: 5px;
+   font-size: 10px;
+   top: 5px;
+ }
+ body
+ {
+    font-size: 10px;
+ }
+ .color-box
+ {
+    width: 100%;
+    border-radius: 10;
+ }
+
+ .nav img 
+{
+    mix-blend-mode: multiply;
+    position: relative;
+    right: 45px;
+    width: 15%;
+    bottom: 3px;
+
+}
+.but-1
+{
+    width: 80%;
+}
+.abhay-box img
+{
+    width: 100%;
+    height: 60%;
+}
+.abhay-3
+{
+    width: 100%;
+}
+.color-gola
+{
+    width: 70%;
+}
+.add input
+{
+    width: 40%;
+}
+
+.colors img {
+    border-radius: 20px;
+    width: 100%;
+    height: 150%;
+}
+
+}
+/* END-1 */
+
+/* SATRT-2 */
+.abhay-4
+{
+flex-wrap: wrap;
+padding: 20px;
+}
+ 
+@media  only screen and (min-width:913px) {
+
+    .abhay-4-box
+{
+    /* border: 2px solid rgb(0, 204, 255); */
+    margin-top: 20px;
+    height: 55%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+}    
+.abhay-box-2 img
+{
+       width: 100%;
+
+}
+.abhay-box-2
+{
+    border: 1px solid rgb(223, 223, 223);
+    padding: 10px;      
+}
+.abhay-box-2:hover
+{
+    transform: scale(0.9);
+    transition: 0.6s;
+}
+.abhay-box-3 img
+{
+       width: 100%;
+
+}
+.abhay-box-3
+{ 
+    border: 1px solid rgb(223, 223, 223);
+    padding: 10px;      
+}
+.abhay-box-3:hover
+{
+    transform: scale(0.9);
+    transition: 0.6s;
+}
+.content
+{
+    border: 2px solid rgb(0, 0, 0);
+    
+}
+/* #logitech
+{
+
+    margin-top: 20px;
+}
+#hyperX
+{
+    margin-top: 30px;
+}
+#microphone
+{
+    margin-top: 30px;
+}
+#earphone
+{
+    margin-top: 40px;
+} */
+.icon-2
+{
+    color: rgb(0, 96, 45);
+    height: 5%;
+}
+/* END-2 */
+
+
+/* START-3 */
+
+.details-box
+{
+
+margin-top: 10px;
+display: flex;
+padding: 10px;
+justify-content: space-around;
+}
+
+
+
+.products
+{
+    border: .5px solid rgb(189, 189, 189);
+    width: 49.5%;
+    height: 100%;
+    display: flex;
+
+    
+}
+.products-2
+{
+    border: .5px solid rgb(189, 189, 189);
+    width: 49.5%;
+    height: 35%;
+    display: flex;
+    width: 100%;
+}
+
+
+.line
+{
+    height: 100%;
+background-color: rgb(239, 239, 239);
+    width: 50%;
+    padding: 10px;
+}
+
+.items
+{
+    width: 100%;
+    margin-top: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}
+.details-box-1
+{
+    width: 45%;
+    margin-top: 50px;
+    height: 80%;
+    position: relative;
+    left: 50px;
+    animation-name: abhay;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+
+}
+
+@keyframes abhay{
+    0% {top: 0px; left: -50%;}
+    100% {top: 0px; left: 50px;}
+}
+.details-box-2
+{
+    width: 30%;
+    margin-top: 50px;
+    height: 60%;
+    position: relative;
+    right: 80px;
+    top: 100px;
+}
+.details-box-3
+{
+    width: 40%;
+    margin-top: 50px;
+    height: 30%;
+    position: relative;
+    left: 50px;
+    top: 200px;
+}
+.details-box-4
+{
+    width: 45%;
+    margin-top: 50px;
+    height: 80%;
+    position: relative;
+    right: 50px;
+    animation-name: lucky;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+
+}
+@keyframes lucky
+{
+    0% {top: 0%; left: 60%; right: 0%;}
+    100% {top: 0%; left: -50px; right: 0%;}
+}
+.details-box-5
+{
+    width: 45%;
+    margin-top: 50px;
+    height: 80%;
+    position: relative;
+    left: 50px;
+    animation-name: abhay;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+
+}
+.details-box-6
+{
+    width: 35%;
+    height: 35%;
+    position: relative;
+    right: 80px;
+    top: 200px;
+    animation-name: ab;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+.details-box-7
+{
+    width: 40%;
+    height: 30%;
+    position: relative;
+    left: 50px;
+    top: 250px;
+   
+}
+
+.details-box-8
+{
+    width: 45%;
+    margin-top: 50px;
+    height: 80%;
+    position: relative;
+    right: 50px;
+    animation-name: raghav;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+
+}
+@keyframes raghav{
+    0% {top: 0%; left: 60%; right: 0%;}
+    100% {top: 0%; left: -50px; right: 0%;}
+}
+.details-box-2 h1
+{
+    font-size: 50px;
+}
+
+.details-box-3 h1
+{
+    font-size: 50px;
+}
+.details-box-3 ,h1,h2
+{
+    margin: 1%;
+}
+.details-box-2 ,h1,h2
+{
+    margin: 1%;
+}
+.details-box-6 h1
+{
+    font-size: 50px;
+}
+.details-box-7 h1
+{
+    font-size: 50px;
+}
+.details-box-2 h2{
+    font-weight: 500;
+}
+.details-box-3 h2{
+    font-weight: 500;
+}
+.details-box-6 h2{
+    font-weight: 500;
+}
+.details-box-7 h2{
+    font-weight: 500;
+}
+.line p
+{
+font-size:18px;
+font-weight: 700;
+}
+.line-2
+{
+    padding: 10px;
+    font-size: 17px;
+   
+}
+
+#year
+{
+    margin-top: 16px;
+}
+#material
+{
+    margin-top: 8px;
+}
+
+#name
+{
+    margin-top: 5px;
+}
+#item-no
+{
+    margin-top: 3px;
+}
+
+#warranty
+{
+    height: 15%;
+    padding: 5px;
+width: 50%;
+}
+.divv
+{
+ 
+    border: .5px solid rgb(189, 189, 189);
+   width:100%;
+   margin-top: 10px;
+   height: 63%;
+   padding: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   /* justify-content: space-between; */
+}
+.divv-box
+{
+    height: 80%;
+    padding: 20px;
+    width: 49%;
+    background-color:rgb(239, 239, 239);
+    font-size: 18px;
+    font-weight: 700;
+}
+.divv-box-2
+{
+    height: 80%;
+    padding: 20px;
+    width: 49%;
+    font-size: 17px;
+}
+
+/* END-3 */
+
+
+/* footer start here */
+footer
+{
+    margin-top: 5px;
+    background-color:#181818;
+}
+
+footer ul 
+{
+   
+    padding: 0%;
+    margin: 0%;
+  list-style: none;
+ 
+   
+}
+footer a
+{
+text-decoration: none;
+
+
+}
+.boxing ul li a:hover
+{
+    color:#8758ff;
+    transition: 0.2s ease;
+}
+#spe
+{
+    margin-top: 12%;
+}
+
+.con 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+   color:#f2f2f2;
+   padding: 50px;
+   
+}
+
+.con-con-10
+{
+    text-align: center;
+}
+
+.abhay-10
+{
+    text-align: center;
+    padding: 10px;
+}
+.abhay-10 
+input[type=text]
+{
+   color: rgb(0, 0, 0);
+    border: none;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+#bit 
+{
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 20px;
+    background-color:#8758ff;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+#bit:hover
+{
+    background-color:#dfdfdf;
+    color: #8758ff;
+    border: 0.5px solid #8758ff;
+  }
+.abhay-10 img
+{
+ width: 150px;
+ height: 65px;
+ mix-blend-mode: multiply;
+}
+
+
+.boxing
+{
+    padding: 10px;
+    text-align: center;
+
+}
+.boxing ul li {
+ padding: 15px;
+ 
+}
+
+.boxing ul li a
+{
+    color: rgb(255, 255, 255);
+   
+}
+
+
+.last
+{
+   text-align: center;
+   padding: 20px;
+   color:#8758ff;
+}
+@media screen and (max-width:913px) {
+    .nav
+    {
+        display: none;
+    }
+    .abhay-10 
+    
+    {
+        border: 2px solid white;
+       
+    }
+    .abhay-box-3
+{ 
+    display: none;      
+}
+.abhay-4
+{
+flex-wrap: wrap;
+padding: 20px;
+display: flex;
+}
+.abhay-4-box
+{
+    margin-top: 2%;
+    height: 55%;
+    display: grid;
+    grid-template-columns: row row row row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.details-box
+{
+   width: 100%;
+   margin-top: 1%;
+
+}
+#spe
+{
+    margin-top: 50px;
+}
+.products
+{
+    width: 100%;
+}
+.products-2
+{
+    width: 100%;
+    margin-top: 5px;
+}
+.divv
+{
+    width: 100%;
+    margin-top: px;
+}
+.abhay-box-2
+{
+   height: 110%;
+}
+#product
+{
+    margin-top: 100%;
+}
+.details-box-2
+{
+    width: 50%;
+    margin-top: 70px;
+    height: 10%;
+    right: 0px;
+    top: 0px;
+  }
+  .items h1
+{
+    font-size: 15px;
+}
+.items h2
+{
+    font-size: 8px;
+}
+.details-box-3
+{
+    margin-top: 0px;
+    position: relative;
+    left: 0px;
+    top: 100px;
+}
+
+.details-box-4
+
+{
+   right: 2px;
+   animation-name: lucky;
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+ 
+ }
+ .details-box-5
+ {
+    left: 2px;
+ }
+ .details-box-6
+ {
+    right: 0px;
+    top: 80px;
+  
+ }
+ .details-box-7
+ {
+    left: 0px;
+    top: 90px;
+ }
+ .details-box-8
+ {
+    right: 2px;
+ }
+ @keyframes raghav{
+    0% {top: 0%; left: 60%; right: 0%;}
+    100% {top: 0%; left: -2px; right: 0%;}
+}
+ @keyframes lucky   
+ {
+     0% {top: 0%; left: 60%; right: 0%;}
+     100% {top: 0%; left: -2px; right: 0%;}
+ }
+.details-box-1
+{
+    left: 1px;
+    animation-name: abhay;
+animation-duration: 2s;
+animation-iteration-count: 1;
+}
+}
+
+@keyframes abhay{
+  0% {top: 0px; left: -50%;}
+  100% {top: 0px; left: 1px;}
+}
+
+
+
+/* footer end here */
