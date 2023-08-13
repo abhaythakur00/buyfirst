@@ -6,15 +6,21 @@ import Home from './components/Home';
 import Product from './components/Product';
 import Login from './components/Login';
 import Create from './components/Create';
+import Pay from './components/Pay';
+import Cart from './components/Cart';
 function App() {
   return (
     
     <Routes>
       <Route path="/" index element={<Home />} />
-      <Route path="/category" element={<Category />} />       
-      <Route path="/Product" element={<Product/>} />   
-      <Route path="/Login" element={<Login/>} />  
-      <Route path="/Login" element={<Create/>} />      
+      <Route path="/category/:categoryID" element={<Category />} />       
+      <Route path="/product/:productID" element={<Product/>} />   
+      <Route path="/login" element={<Login/>} />  
+      <Route path="/register" element={<Create/>} />  
+      <Route path="/payment" element={<Pay/>} /> 
+      <Route path="/cart" element={<Cart/>} />      
+
+
     </Routes>
    
   

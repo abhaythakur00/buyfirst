@@ -1,5 +1,7 @@
 import React from "react";
 import Carousel from "./Carousel";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
 // import Swiper bundle with all modules installed
 
 
@@ -7,9 +9,16 @@ import Carousel from "./Carousel";
 
 
 function Home() {
-  
+  const navigate = useNavigate()
+  const Username = localStorage.getItem('name')
+  const logout = () => {
+    localStorage.setItem('name', null)
+    localStorage.setItem('pass', null)
+    navigate('/login')
+  }
   return (
     <div>
+      
       <div className="nav">
         <ul>
           <img
@@ -23,12 +32,26 @@ function Home() {
             <input type="text" placeholder=" What is on your mind today?" />
           </div>
           <button id="search">Search</button>
-          <div className="button-1">
-            <a href="login.html">
-              {" "}
-              <button>Login</button>
-            </a>
-          </div>
+         { Username ?
+          <>
+        <div className="button-1">
+          <a >
+            {" "}
+            <button>{Username}</button>
+          </a>
+        </div>
+        <div className="button-1">
+          <a >
+            {" "}
+            <button onClick={logout}>Logout</button>
+          </a>
+        </div></> :
+        <div className="button-1">
+        <a href="/login">
+          {" "}
+          <button>Login</button>
+        </a>
+      </div>}
 
           <div className="icon">
             
@@ -80,7 +103,7 @@ function Home() {
       </div>
       <div className="box-1">
         <div className="img-box">
-          <a href="/category">
+          <a href="/category/foot">
             <img
               loading="lazy"
               src={process.env.PUBLIC_URL + "images/" + "d.jpg"} alt="" width="100%" height="100%"/>
@@ -88,7 +111,7 @@ function Home() {
         </div>
 
         <div className="img-box">
-          <a href="/category">
+          <a href="/category/hats">
             {" "}
             <img
               loading="lazy"
@@ -101,7 +124,7 @@ function Home() {
         </div>
 
         <div className="img-box">
-          <a href="/category">
+          <a href="/category/watches">
             <img
               loading="lazy"
               src={process.env.PUBLIC_URL + "images/" + "f.jpg"}
@@ -113,7 +136,7 @@ function Home() {
         </div>
 
         <div className="img-box">
-          <a href="">
+          <a href="/category/women">
             <img
               loading="lazy"
               src={process.env.PUBLIC_URL + "images/" + "g.jpg"}
@@ -124,7 +147,7 @@ function Home() {
           </a>
         </div>
         <div className="img-box">
-          <a href="">
+          <a href="/category/men">
             <img
               loading="lazy"
               src={process.env.PUBLIC_URL + "images/" + "h.jpg"}

@@ -1,5 +1,6 @@
-import React from "react";
-import Carousel from "./Carousel";
+import {useState} from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import { useNavigate } from "react-router-dom";
 // import Swiper bundle with all modules installed
 
 
@@ -7,11 +8,30 @@ import Carousel from "./Carousel";
 
 
 function Login() {
-  
+
+    const [name, setname] = useState('')
+    const [password, setpassword] = useState('')
+    const navigate = useNavigate()
+    const showToastMessage = () => {
+        toast.success(`Login Success ! Welcome ${localStorage.getItem('name')}` , {
+            position: toast.POSITION.TOP_RIGHT,
+            className: 'toast-message'
+        
+        });
+    };
+    const login = () => {
+            localStorage.setItem('name', name)
+            localStorage.setItem('pass', password)
+            showToastMessage()
+            // setTimeout(window.location.href = '/', 6000);
+            navigate('/')
+            
+            
+    }
   return (
 <div>
 <div className="nav">
-        
+
         <ul>
             <img 
             src={process.env.PUBLIC_URL + "images/" + "abhaY.jpg"} alt="" width="8%" height="5%"/>
@@ -20,7 +40,7 @@ function Login() {
         </div>
         <div className="button-1">
             <li id="home">
-                <a href="new.html"> 
+                <a href="/"> 
                 <i className="fa-solid fa-house" style={{color:"#000000"}}></i> Home</a></li></div>
         </ul>
 
@@ -33,16 +53,16 @@ function Login() {
 
       <div className="box-0">  
     <label for="text">Username :</label>
-    <input type="Email" placeholder="Username or Email..." id="text" name=" text"/><br/><br/>
+    <input type="Email" onChange={(e) => setname(e.target.value)} placeholder="Username"  id="text" name=" text"/><br/><br/>
     <label for="number">Password :</label>
-        <input type="password" placeholder="Password...." id="password" name="pasword"/><br/><br/></div>   
+        <input onChange={(e) => setpassword(e.target.value)} type="password" placeholder="Password...." id="password" name="pasword"/><br/><br/></div>   
     <div className="continue">
-       <a href=""><button  onclick="return login()" id="login-page">Login</button></a></div>
+       <a><button onClick={login} id="login-page">Login</button></a></div>
     
     <p className="policy">By continue,you agree to Buyfirst<br/>
     Terms of use & policy.</p>
     <div className="buttt">
-        <a href="create.html"><button>Create Your Account</button></a> 
+        <a href="/register"><button>Create Your Account</button></a> 
     </div>
 
 

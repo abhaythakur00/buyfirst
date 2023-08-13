@@ -1,8 +1,10 @@
 import {useEffect, useState} from "react";
 import {products} from '../db/productList'
+import { useParams } from "react-router-dom";
 
 
 function Category() {
+    let { categoryID } = useParams()
     const [count, setCount] = useState(0)
     const [buy, setBuy] = useState({
         name: "",
@@ -52,10 +54,10 @@ function Category() {
 
             </div>
             <div className="con-4">
-                { products.map(p => {
+                { products.filter((c)=> c.category === categoryID).map(p => {
                     return (
                         <div className="img-box-a1"> 
-                        <a href="page.html"><img loading="lazy" src={process.env.PUBLIC_URL + "images/" + p.image } alt="" width="100%" height="100%" /></a>
+                        <a href=""><img loading="lazy" src={`/images/` + p.image } alt="" width="100%" height="100%" /></a>
                         <h4>ASIAN <br />
                             {p.name}</h4>
                             <h2>₹{p.price}</h2>
