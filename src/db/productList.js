@@ -10,6 +10,7 @@ export const products  =  [
   { id : '2',
     name: "New shoes 1",
     price: 3999,
+    desc: '',
     image : "asian.jpg",
     category : "foot"
   },
@@ -24,5 +25,12 @@ export const products  =  [
     price: 2397,
     image : "asian.jpg",
     category : "foot"
+  },
+  { id : '5',
+    name: "HyperX Cloud II",
+    desc: 'Gaming Headset for PC, PS5 / PS4. Includes 7.1 Virtual Surround Sound andUSB Audio Control Box - Red (4P5M0AA)',
+    price: 2397,
+    image : "asian.jpg",
+    category : "electronics"
   },
 ]

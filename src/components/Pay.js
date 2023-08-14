@@ -1,12 +1,18 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import Cart from './Cart'
+import { toast } from 'react-toastify'
 
 function Pay() {
     const navigate = useNavigate()
     const payNow = ()  => {
-        alert('payment is success')
+        toast.success(`Payment Success ` , {
+            position: toast.POSITION.TOP_RIGHT,
+            className: 'toast-message'
+        
+        });
         localStorage.setItem('cartList', '')
-        navigate('/payment  ')
+        navigate('/')
 
     }
     return (
@@ -79,7 +85,7 @@ function Pay() {
                         <h5>PAYMENT METHOD</h5>
                     </div>
                 </div>
-
+        <Cart />
                 {/* <div className="con-3">
                     <h4>Your Order</h4>
 

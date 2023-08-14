@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import {products} from '../db/productList'
 import { useParams } from "react-router-dom";
+import Navbar from "./Navbar";
 
 
 function Category() {
@@ -25,34 +26,7 @@ function Category() {
     return (
 
         <div>
-            <div className="nav">
-
-                <ul>
-
-
-                    <img src={process.env.PUBLIC_URL + "images/" + "abhaY.jpg" } alt="" width="8%" height="5%" />
-                    <div className="div_head">
-                        <input type="text" placeholder=" What is on your mind today?" />
-
-
-                    </div>
-                    <button id="search">Search</button>
-                    <div className="button-1">
-                        <a href="login.html"> <button>
-                            Login
-                        </button></a>
-                    </div>
-  
-                    <div className="icon">
-
-                        <i className="fa-solid fa-bell" style={{color : "#8758ffcc"}}></i>
-                       <a href="#"><i className="fa-solid fa-cart-shopping" style={{color : "#8758ffcc"}}></i></a> 
-                        <p style={{margin: 0, fontSize: '16px', fontWeight: 'bolder'}}>{count!==0 ? count : null}</p>
-                        
-                    </div>
-                </ul>
-
-            </div>
+           <Navbar />
             <div className="con-4">
                 { products.filter((c)=> c.category === categoryID).map(p => {
                     return (
