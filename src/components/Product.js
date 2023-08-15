@@ -70,8 +70,8 @@ function Product() {
                             </div>
         
                             <div className="border-2">
-                                <h2>-23% ₹{p.price}</h2>
-                                <h4>M.R.P.: ₹12,987</h4>
+                                <h2>-{(800/p.price*100).toFixed(0)}% ₹{p.price}</h2>
+                                <h4>M.R.P.: <s>₹{p.price + 800}</s></h4>
                             </div>
                             <div className="border-3">
                                 <p>Inclusive of all taxes</p>

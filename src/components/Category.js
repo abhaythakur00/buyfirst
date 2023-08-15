@@ -1,6 +1,6 @@
-import {useEffect, useState} from "react";
-import {products} from '../db/productList'
-import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { products } from '../db/productList'
+import { useParams, Link } from "react-router-dom";
 import Navbar from "./Navbar";
 
 
@@ -10,52 +10,56 @@ function Category() {
     const [buy, setBuy] = useState({
         name: "",
         price: 0,
-        image : ""
+        image: ""
     })
     // useEffect(() => {
-      
 
-    
+
+
     //   return () => {
-        
+
     //   }
     // }, [])
-    
- console.log(buy, count)
+
+    console.log(buy, count)
 
     return (
 
         <div>
-           <Navbar />
+            <Navbar />
             <div className="con-4">
-                { products.filter((c)=> c.category === categoryID).map(p => {
+                {products.filter((c) => c.category === categoryID).map(p => {
                     return (
-                        <div className="img-box-a1"> 
-                        <a href=""><img loading="lazy" src={`/images/` + p.image } alt="" width="100%" height="100%" /></a>
-                        <h4>ASIAN <br />
-                            {p.name}</h4>
+                        <div className="img-box-a1">
+                            <a href=""><img loading="lazy" src={`/images/` + p.image} alt="" width="100%" height="100%" /></a>
+                            <h4>ASIAN <br />
+                                {p.name}</h4>
                             <h2>₹{p.price}</h2>
-                             <h5>M.R.P: <s>₹{ p.price + 200}</s></h5>
-    
-                          <button onClick={() => {setBuy({
-                                name: p.name,
-                                price: p.price,
-                                image : p.image
-                            }); setCount(count + 1)} }>Add to Cart</button>
-    
-                    </div>
+                            <h5>M.R.P: <s>₹{p.price + 200}</s></h5>
+                            <Link to={`/product/${p.id}`}>
+                                <button onClick={() => {
+                                    setBuy({
+                                        name: p.name,
+                                        price: p.price,
+                                        image: p.image
+                                    }); setCount(count + 1)
+                                }}>View Product</button>
+                            </Link>
+
+
+                        </div>
                     )
                 })
-           
-}
+
+                }
                 <div className="img-box-a1">
                     <a href="page.html"><img loading="lazy" src={process.env.PUBLIC_URL + "images/" + "asian.jpg"} alt="" width="100%" height="100%" /></a>
                     <h4>ASIAN <br />
                         Men's TARZAN-03 Casual White Sneaker High Neck Shoes for Men I </h4>
-                        <h2>₹599 </h2>
-                         <h5>M.R.P: <s>₹899</s></h5>
+                    <h2>₹599 </h2>
+                    <h5>M.R.P: <s>₹899</s></h5>
 
-                        <a href="payment.html"><button>Buy Now</button></a>
+                    <a href="payment.html"><button>Buy Now</button></a>
 
                 </div>
 
@@ -63,12 +67,12 @@ function Category() {
 
                 <div className="img-box-a2">
                     <img loading="lazy" src={process.env.PUBLIC_URL + "images/" + "campus-1.jpg"} alt="" width="100%" height="100%" />
-                        <h4>Mike (N) Men's Running Shoes</h4>
-                        <h2 id="price">₹1,047 </h2>
-                        <h5>M.R.P: <s>₹1,699</s></h5>
+                    <h4>Mike (N) Men's Running Shoes</h4>
+                    <h2 id="price">₹1,047 </h2>
+                    <h5>M.R.P: <s>₹1,699</s></h5>
 
 
-                        <a href="payment.html"> <button id="leptop">Buy Now</button></a>
+                    <a href="payment.html"> <button id="leptop">Buy Now</button></a>
                 </div>
 
 
@@ -85,21 +89,21 @@ function Category() {
                     <img loading="lazy" src={process.env.PUBLIC_URL + "images/" + "bata-1.jpg"} alt="" width="100%" height="100%" />
                     <h4>BATA <br />
                         Mens Boss-ace Uniform <br />Dress Shoe </h4>
-                        <h2 id="price-2">₹699 </h2>
+                    <h2 id="price-2">₹699 </h2>
                     <h5> M.R.P: <s>₹999</s></h5>
                     <a href="payment.html"> <button>Buy Now</button></a>
                 </div>
-              </div>
+            </div>
 
-              <div className="con-4">
+            <div className="con-4">
                 <div className="img-box-a1">
                     <a href="page.html"><img loading="lazy" src={process.env.PUBLIC_URL + "images/" + "asian.jpg"} alt="" width="100%" height="100%" /></a>
                     <h4>ASIAN <br />
                         Men's TARZAN-03 Casual White Sneaker High Neck Shoes for Men I </h4>
-                        <h2>₹599 </h2>
-                         <h5>M.R.P: <s>₹899</s></h5>
+                    <h2>₹599 </h2>
+                    <h5>M.R.P: <s>₹899</s></h5>
 
-                        <a href="payment.html"><button>Buy Now</button></a>
+                    <a href="payment.html"><button>Buy Now</button></a>
 
                 </div>
 
@@ -107,12 +111,12 @@ function Category() {
 
                 <div className="img-box-a2">
                     <img loading="lazy" src={process.env.PUBLIC_URL + "images/" + "campus-1.jpg"} alt="" width="100%" height="100%" />
-                        <h4>Mike (N) Men's Running Shoes</h4>
-                        <h2 id="price">₹1,047 </h2>
-                        <h5>M.R.P: <s>₹1,699</s></h5>
+                    <h4>Mike (N) Men's Running Shoes</h4>
+                    <h2 id="price">₹1,047 </h2>
+                    <h5>M.R.P: <s>₹1,699</s></h5>
 
 
-                        <a href="payment.html"> <button id="leptop">Buy Now</button></a>
+                    <a href="payment.html"> <button id="leptop">Buy Now</button></a>
                 </div>
 
 
@@ -129,13 +133,13 @@ function Category() {
                     <img loading="lazy" src={process.env.PUBLIC_URL + "images/" + "bata-1.jpg"} alt="" width="100%" height="100%" />
                     <h4>BATA <br />
                         Mens Boss-ace Uniform <br />Dress Shoe </h4>
-                        <h2 id="price-2">₹699 </h2>
+                    <h2 id="price-2">₹699 </h2>
                     <h5> M.R.P: <s>₹999</s></h5>
                     <a href="payment.html"> <button>Buy Now</button></a>
                 </div>
-              </div>
+            </div>
 
-              <div className="con-4">
+            <div className="con-4">
                 <div className="navi">
                     <h2>Sport Shoes</h2>
                 </div>
@@ -143,10 +147,10 @@ function Category() {
                     <a href="page.html"><img loading="lazy" src={process.env.PUBLIC_URL + "images/" + "asian.jpg"} alt="" width="100%" height="100%" /></a>
                     <h4>ASIAN <br />
                         Men's TARZAN-03 Casual White Sneaker High Neck Shoes for Men I </h4>
-                        <h2>₹599 </h2>
-                         <h5>M.R.P: <s>₹899</s></h5>
+                    <h2>₹599 </h2>
+                    <h5>M.R.P: <s>₹899</s></h5>
 
-                        <a href="payment.html"><button>Buy Now</button></a>
+                    <a href="payment.html"><button>Buy Now</button></a>
 
                 </div>
 
@@ -154,12 +158,12 @@ function Category() {
 
                 <div className="img-box-a2">
                     <img loading="lazy" src={process.env.PUBLIC_URL + "images/" + "campus-1.jpg"} alt="" width="100%" height="100%" />
-                        <h4>Mike (N) Men's Running Shoes</h4>
-                        <h2 id="price">₹1,047 </h2>
-                        <h5>M.R.P: <s>₹1,699</s></h5>
+                    <h4>Mike (N) Men's Running Shoes</h4>
+                    <h2 id="price">₹1,047 </h2>
+                    <h5>M.R.P: <s>₹1,699</s></h5>
 
 
-                        <a href="payment.html"> <button id="leptop">Buy Now</button></a>
+                    <a href="payment.html"> <button id="leptop">Buy Now</button></a>
                 </div>
 
 
@@ -176,14 +180,14 @@ function Category() {
                     <img loading="lazy" src={process.env.PUBLIC_URL + "images/" + "bata-1.jpg"} alt="" width="100%" height="100%" />
                     <h4>BATA <br />
                         Mens Boss-ace Uniform <br />Dress Shoe </h4>
-                        <h2 id="price-2">₹699 </h2>
+                    <h2 id="price-2">₹699 </h2>
                     <h5> M.R.P: <s>₹999</s></h5>
                     <a href="payment.html"> <button>Buy Now</button></a>
                 </div>
-              </div>
+            </div>
 
 
-              <div className="con-4">
+            <div className="con-4">
                 <div className="navi">
                     <h2>Similar Items You Might Like</h2>
                 </div>
@@ -191,10 +195,10 @@ function Category() {
                     <a href="page.html"><img loading="lazy" src={process.env.PUBLIC_URL + "images/" + "asian.jpg"} alt="" width="100%" height="100%" /></a>
                     <h4>ASIAN <br />
                         Men's TARZAN-03 Casual White Sneaker High Neck Shoes for Men I </h4>
-                        <h2>₹599 </h2>
-                         <h5>M.R.P: <s>₹899</s></h5>
+                    <h2>₹599 </h2>
+                    <h5>M.R.P: <s>₹899</s></h5>
 
-                        <a href="payment.html"><button>Buy Now</button></a>
+                    <a href="payment.html"><button>Buy Now</button></a>
 
                 </div>
 
@@ -202,12 +206,12 @@ function Category() {
 
                 <div className="img-box-a2">
                     <img loading="lazy" src={process.env.PUBLIC_URL + "images/" + "campus-1.jpg"} alt="" width="100%" height="100%" />
-                        <h4>Mike (N) Men's Running Shoes</h4>
-                        <h2 id="price">₹1,047 </h2>
-                        <h5>M.R.P: <s>₹1,699</s></h5>
+                    <h4>Mike (N) Men's Running Shoes</h4>
+                    <h2 id="price">₹1,047 </h2>
+                    <h5>M.R.P: <s>₹1,699</s></h5>
 
 
-                        <a href="payment.html"> <button id="leptop">Buy Now</button></a>
+                    <a href="payment.html"> <button id="leptop">Buy Now</button></a>
                 </div>
 
 
@@ -224,11 +228,11 @@ function Category() {
                     <img loading="lazy" src={process.env.PUBLIC_URL + "images/" + "bata-1.jpg"} alt="" width="100%" height="100%" />
                     <h4>BATA <br />
                         Mens Boss-ace Uniform <br />Dress Shoe </h4>
-                        <h2 id="price-2">₹699 </h2>
+                    <h2 id="price-2">₹699 </h2>
                     <h5> M.R.P: <s>₹999</s></h5>
                     <a href="payment.html"> <button>Buy Now</button></a>
                 </div>
-              </div>
+            </div>
         </div>
     );
 }
