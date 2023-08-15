@@ -1,15 +1,26 @@
 import {useState} from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, Link } from "react-router-dom";
 import { products } from '../db/productList'
+import Navbar from "./Navbar";
 
 
 
 function Product() {
     let { productID } = useParams()
     const [quantity, setQuantity] = useState(1)
+    const [color, setColor] = useState(1)
+    const [count, setCount] = useState(0)
+
     const navigate = useNavigate()
     const title = products.filter((p)=> p.id === (productID))[0].name
+    const productImage = products.filter((p)=> p.id === (productID))[0].images[0].name
+    const productColor = products.filter((p)=> p.id === (productID))[0].images[0].color
+
+
     const totalPrice = products.filter((p)=> p.id === (productID))[0].price * quantity
+
+    const [image, setImage] = useState(productImage)
+
     console.log('title', title)
 
     const getCartList  = localStorage.getItem('cartList') ? JSON.parse(localStorage.getItem('cartList')) : []
@@ -18,7 +29,9 @@ function Product() {
     const cartObj = {
         quantity: quantity,
         title: title,
-        price: totalPrice
+        price: totalPrice,
+        image: image === '' ? productImage : image,
+        color: productColor 
 
 
     }
@@ -31,31 +44,28 @@ function Product() {
 
     return (
         <div>
+             <Navbar count={count} />
            { products.filter((i)=> i.id === productID).map(p => {
                     return (
                         <div className="abhay-1">
 
                         <div className="abhay-2">
                             <div className="abhay-box">
-                                <img src={ "/images/" + `${p.image}`} alt="" width="85%" height="80%" />
+                                <img src={ "/images/" + `${image}`} alt="" width="85%" height="80%" />
                             </div>
-                            {/* <div className="color-box">
+                            <div className="color-box">
+                            {p.images.map((img) => {
+                            return (
+                                
                                 <div className="colors">
-                                    <img src={ "/images/" + "color-1.jpg"} alt="" width="100%" height="100%" />
+                                    <img onClick={() => setImage(img.name)} src={ "/images/" + `${img.name}`} alt="" width="100%" height="100%" />
                                 </div>
-                                <div className="colors">
-                                    <img src={ "/images/" + "color-2.jpg"} alt="" width="105%" height="100%" />
-                                </div>
-                                <div className="colors">
-                                    <img src={ "/images/" + "color-3.jpg"} alt="" width="105%" height="100%" />
-                                </div>
-                                <div className="colors">
-                                    <img src={ "/images/" + "color-4.jpg"} alt="" width="105%" height="100%" />
-                                </div>
-        
-                            </div> */}
-                        </div>
-        
+                                
+                            )
+                           })}
+                           </div>
+                           </div>
+                  
                         <div className="abhay-3">
                             <div className="border-1">
                                 <h1>{p.name} </h1>
@@ -80,14 +90,20 @@ function Product() {
                             <div className="border-4">
                                 <h3 id="color">Choose a Color</h3>
                                 <div className="color-gola">
-                                    <div className="gola">
-        
-                                    </div>
-                                    <div className="gola-2">
-        
-                                    </div>
-        
+                                {p.images.map((img) => {
+                            return (
+                                
+                             
+                                <div onClick={() => setImage(img.name)} className={`${img.color}`}>
+    
                                 </div>
+                                
+    
+                            
+                                
+                            )
+                           })}
+                              </div>  
         
                             </div>
         
@@ -95,7 +111,7 @@ function Product() {
                                 <div className="add"> <input onChange={(e) => setQuantity(e.target.value)} type="number" /></div>
         
                                 <div className="but-1">
-                                    <a ><button onClick={setCart}>Add to Cart</button></a>
+                                    <a ><button onClick={() => {setCart(); setCount(count+1) }}>Add to Cart</button></a>
                                 </div>
                             </div>
         
@@ -111,7 +127,7 @@ function Product() {
                                 <p>Free 30days Delivery Return  <a href="">Details</a></p>
                             </div>
                         </div>
-        
+       
                     </div>
                      )
            })
@@ -122,8 +138,9 @@ function Product() {
                 <h1 id="product">
                     Products related to this item</h1>
                 <div className="logitech-box">
-                    <div className="logitech-box-2">
-                        <img src={ "/images/" + "logitech.jpg"} alt="" width="105%" height="100%" />
+                   <div onClick={() => window.location.href = '/product/6'} className="logitech-box-2">
+                   {/* <Link to={`/product/6`} > */}
+                       <img  src={ "/images/" + "logitech.jpg"} alt="" width="105%" height="100%" />
 
                         <h4 id="logitech">Logitech G Pro X Gaming Wired Over Ear Headphones with Mic Blue Voice DTS…</h4>
                         <div className="icon-2">
@@ -135,9 +152,10 @@ function Product() {
                         </div>
                         <h2>
                             ₹13,995.00 </h2>
-                    </div>
+                            {/* </Link> */}
+                    </div> 
 
-                    <div className="logitech-box-2">
+                    <div onClick={() => window.location.href = '/product/7'} className="logitech-box-2">
                         <img src={ "/images/" + "hyperX.jpg"} alt="" width="105%" height="100%" />
                         <h4 id="hyperX">HyperX Cloud Stinger 2 Core Gaming Headset for Playstation - White (6H9B5AA)</h4>
                         <div className="icon-2">
@@ -150,7 +168,7 @@ function Product() {
                         <h2>₹3,490.00 </h2>
                     </div>
 
-                    <div className="logitech-box-2">
+                    <div onClick={() => window.location.href = '/product/8'} className="logitech-box-2">
                         <img src={ "/images/" + "microphone.jpg"} alt="" width="105%" height="100%" />
                         <h4 id="microphone">HyperX Solocast - Usb Condenser Gaming Unidirectional Microphone, For Pc,…</h4>
                         <div className="icon-2">
@@ -163,7 +181,7 @@ function Product() {
                         <h2>₹4,490.00 </h2>
                     </div>
 
-                    <div className="logitech-box-2">
+                    <div onClick={() => window.location.href = '/product/9'} className="logitech-box-2">
                         <img src={ "/images/" + "earphone.jpg"} alt="" width="105%" height="100%" />
                         <h4 id="earphone">Hyperx Cloud Earbuds Wired in Ear Gaming Earphones with Mic for Nintendo Switch and....</h4>
                         <div className="icon-2">

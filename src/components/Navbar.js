@@ -1,8 +1,13 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import {useState} from "react";
+// import { useNavigate, useParams, Link } from "react-router-dom";
+import { products } from '../db/productList'
 
-function Navbar() {
+import { useNavigate } from 'react-router-dom'
+import Search from "./Search";
+
+function Navbar(props) {
     const navigate = useNavigate()
+    const [search, setSearch] = useState('')
   const Username = localStorage.getItem('name')
   const logout = () => {
     localStorage.setItem('name', null)
@@ -14,15 +19,15 @@ function Navbar() {
     <ul>
       <img
         loading="lazy"
-        src={process.env.PUBLIC_URL + "images/" + "abhaY.jpg"}
+        src={process.env.PUBLIC_URL + "/images/" + "abhaY.jpg"}
         alt=""
         width="8%"
         height="5%"
       />
       <div className="div_head">
-        <input type="text" placeholder=" What is on your mind today?" />
+        <input onChange={(e) => setSearch(e.target.value)} type="text" placeholder=" What is on your mind today?" />
       </div>
-      <button id="search">Search</button>
+      {/* <button id="search">Search</button> */}
      { Username ?
       <>
     <div className="button-1">
@@ -47,13 +52,15 @@ function Navbar() {
       <div className="icon">
         
         <i className="fa-solid fa-bell" style= {{color:"#8758ffcc"}}></i>
-        <a href="/cart"><i className="fa-solid fa-cart-shopping" style= {{color:"#8758ffcc"}}></i></a>
+        <a href="/cart"><i className="fa-solid fa-cart-shopping" style= {{color:"#8758ffcc"}}></i></a> <span>{props.count !==0 ? props.count : null}</span>
 
 
     
       </div>
     </ul>
-  </div></div>
+  </div>
+  <Search search={search} />
+  </div>
   )
 }
 

@@ -16,7 +16,7 @@ function Pay() {
 
     }
     return (
-        <div>
+        <div className='payment-box'>
             <div className="con-1">
                 <h1>Shopping Cart</h1>
                 <h5> <a href="new.html">Homepage </a>/ <a href="">Clothing </a>/ <a href="">My Shopping Cart</a></h5>

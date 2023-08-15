@@ -17,25 +17,25 @@ function Cart() {
   return (
     <>
     { window.location.href.includes('/cart') ? <Navbar /> : null}
-    <div className="con-3">
+    <div className="cart-con-3">
                     <h4>Your Order</h4>
 
-                    {getCartList ? getCartList.map((e) => {
+                    {getCartList.length > 0 ? getCartList.map((e) => {
                         return (
-                            <div className="img-box">
+                            <div className="cart-box">
                                 <div className="image">
-                                    <img src="a-1.jpg" alt="" width="100%" />
+                                    <img src={`/images/${e.image}`} alt="" width="100%" />
                                 </div>
                                 <div className="text">
                                 <h5><b>{e.quantity}X</b></h5>
                                     <h5>{e.title}</h5>
-
+                                    <h5>{e.color}</h5>
                                     <h5>{e.price}</h5>
                                 </div>
                             </div>
                         )
                     })
-                : null }
+                : <p>Cart is empty add items to order !</p> }
 
 
                     <div className="total">

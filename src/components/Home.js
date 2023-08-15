@@ -1,6 +1,7 @@
-import React from "react";
+import {useState} from "react";
 import Carousel from "./Carousel";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams, Link } from "react-router-dom";
+import { products } from '../db/productList'
 import { ToastContainer, toast } from 'react-toastify';
 import Navbar from "./Navbar";
 // import Swiper bundle with all modules installed
@@ -11,6 +12,7 @@ import Navbar from "./Navbar";
 
 function Home() {
   const navigate = useNavigate()
+  const [search, setSearch] = useState('')
   const Username = localStorage.getItem('name')
   const logout = () => {
     localStorage.setItem('name', null)
@@ -18,9 +20,11 @@ function Home() {
     navigate('/login')
   }
   return (
-    <div>
+    <>
+    <Navbar />
+ <div>
       
-      <Navbar />
+      
       <div className="container">
         <div className="con-1">
           <h1 id="mm">
@@ -123,7 +127,7 @@ function Home() {
           <h2>Similar Items You Might Like</h2>
         </div>
         <div className="img-a1">
-          <a href="Produt">
+          <a href="/product/10">
             <img
               loading="lazy"
               src={process.env.PUBLIC_URL + "images/" + "a-1.jpg"}
@@ -137,7 +141,7 @@ function Home() {
             Virtual Surround Sound and USB Audio Control Box - Red (4P5M0AA)
           </h4>
 
-          <a href="payment.html">
+          <a href="/product/10">
             <button>Buy Now</button>
           </a>
         </div>
@@ -154,7 +158,7 @@ function Home() {
             Hp Pavilion X360 11Th Gen Intel Core I3 14 Inches Fhd Multitouch
             2-in-1 Laptop(8Gb Ram/512Gb Ssd/B&O/Windows 11 Home)
           </h4>
-          <a href="payment.html">
+          <a href="/product/11">
             {" "}
             <button id="leptop">Buy Now</button>
           </a>
@@ -169,7 +173,7 @@ function Home() {
             height="100%"
           />
           <h4>LG Ultragear 69 cm IPS FHD, G-Sync Compatible, HDR 10, Gaming LCD Monitor</h4>
-          <a href="payment.html">
+          <a href="/product/12">
             {" "}
             <button id="add">Buy Now</button>
           </a>
@@ -187,13 +191,13 @@ function Home() {
             Realme narzo 60 5G (Mars Orange,8GB+128GB) 90Hz Super AMOLED Display
             | Ultra Premium Vegan Leather Design
           </h4>
-          <a href="payment.html">
+          <a href="/product/13">
             {" "}
             <button>Buy Now</button>
           </a>
         </div>
       </div>
-
+{/* 
       <div className="con-5">
         <div className="navi">
           <h2>MEN'S CLOTHING</h2>
@@ -312,7 +316,7 @@ function Home() {
           />
           <h4>SLIPPERS</h4>
         </div>
-      </div>
+      </div> */}
 
       <div className="con-8">
         <div className="navi">
@@ -484,7 +488,10 @@ function Home() {
         <div class="icon-5"> <a href=""><i class="fa-brands fa-linkedin"></i></a></div></div>
         </div>
       </footer>
-    </div>
+    </div> 
+
+    </>
+    
   );
 }
 
