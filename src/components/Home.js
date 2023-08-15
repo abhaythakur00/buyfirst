@@ -141,7 +141,7 @@ function Home() {
             Virtual Surround Sound and USB Audio Control Box - Red (4P5M0AA)
           </h4>
 
-          <a href="/product/10">
+          <a href="/product/11">
             <button>Buy Now</button>
           </a>
         </div>

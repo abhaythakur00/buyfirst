@@ -17,13 +17,13 @@ function Pay() {
     }
     return (
         <div className='payment-box'>
-            <div className="con-1">
+            <div className="conn-1">
                 <h1>Shopping Cart</h1>
                 <h5> <a href="new.html">Homepage </a>/ <a href="">Clothing </a>/ <a href="">My Shopping Cart</a></h5>
 
             </div>
             <div className="big-con">
-                <div className="con-2">
+                <div className="conn-2">
                     <div className="nav-2">
                         <div className="gola-a">
                             a
@@ -35,7 +35,7 @@ function Pay() {
                             <div className="first">
                                 <p>First Name*</p>
                                 <input type="text" /></div>
-                            <div className="last">
+                            <div className="lastt">
                                 <p>Last Name*</p>
                                 <input type="text" /></div>
                         </div>
@@ -60,7 +60,7 @@ function Pay() {
                                 <p>Country*</p>
                                 <select name="" id="">
                                     <option value="">United States</option>
-                                    <option value="">United States</option>
+                                    <option value="">India</option>
                                     <option value="">United States</option>
                                     <option value="">United States</option>
                                     <option value="">United States</option>
@@ -86,12 +86,12 @@ function Pay() {
                     </div>
                 </div>
         <Cart />
-                {/* <div className="con-3">
+                {/* <div className="conn-3">
                     <h4>Your Order</h4>
 
                     {getCartList ? getCartList.map((e) => {
                         return (
-                            <div className="img-box">
+                            <div className="img-boxing">
                                 <div className="image">
                                     <img src="a-1.jpg" alt="" width="100%" />
                                 </div>

@@ -12,20 +12,20 @@
  .payment-box{
     padding: 10px;
  }
-  .con-1
+  .conn-1
 {
 /* border: 2px solid black; */
 padding: 10px;
 }
-.con-1 a
+.conn-1 a
 {
     color: black;
 }
-.con-1 a:hover
+.conn-1 a:hover
 {
     color: #8758ff;
 }
-.con-1 h1
+.conn-1 h1
 {
     margin: 0;
 }
@@ -37,14 +37,14 @@ padding: 10px;
     display: flex;
     }
 
-.con-2
+.conn-2
 {
 border: .5px solid rgb(227, 227, 227);
 width: 55%;
 height: 90%;
 background-color: rgba(229, 229, 229, 0.815);
 }
-.con-2 input
+.conn-2 input
 {
     border: none;
 }
@@ -99,7 +99,6 @@ background-color: rgba(229, 229, 229, 0.815);
 {
     margin: 0;
     position: relative;
-    left: 20px;
 
 }
 /* form-1 start here */
@@ -121,14 +120,14 @@ background-color: rgba(229, 229, 229, 0.815);
     border-radius: 7px;
 
 }
-.last
+.lastt
 {
  
     width: 36%;
     position: relative;
     left: 20px;
 }
-.last input
+.lastt input
 {
     width: 100%;
     padding: 13px;
@@ -204,7 +203,7 @@ border: none;
 background-color: white;
   
 }
-.con-2 p
+.conn-2 p
 {
 margin: 1%;
 }
@@ -357,7 +356,7 @@ width: 90%;
         padding: 8px;
     }
     
-    .con-2
+    .conn-2
 {
 border: .5px solid rgb(227, 227, 227);
 width: 100%;
@@ -389,7 +388,7 @@ background-color: rgba(229, 229, 229, 0.815);
 }
 
 
-.last{
+.lastt{
  position: relative;
     left: 30px;
 }
@@ -404,6 +403,7 @@ background-color: rgba(229, 229, 229, 0.815);
     background-color: rgba(229, 229, 229, 0.892) ;
 }
 
+
     .butt button
     {
     width: 25%;
@@ -414,6 +414,7 @@ background-color: rgba(229, 229, 229, 0.815);
     background-color: #8758ff;
     color: white;
     border: 0.5px solid #8758ff;
+   
     }
 
 }
@@ -440,6 +441,7 @@ border: none;
 background-color: #8758ff;
 color: white;
 border: 0.5px solid #8758ff;
+
 }
 
 

@@ -23,7 +23,7 @@ function Create() {
                     <img src="abhaY.jpg" alt="" width="8%" height="5%" />
                     <div className="div_head">
                     </div>
-                    <div className="button-1">
+                    <div className="create-but-1">
                         <li id="home"><a href="/"> <i className="fa-solid fa-house" style={{ color: "#000000" }}></i> Home</a></li></div>
                 </ul>
 
