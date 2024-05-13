@@ -33,15 +33,13 @@ function Login() {
 <div className="nav">
 
         <ul>
+        <a href="/"> 
             <img 
-            src={process.env.PUBLIC_URL + "images/" + "abhaY.jpg"} alt="" width="8%" height="5%"/>
+            src={process.env.PUBLIC_URL + "images/" + "abhaY.jpg"} alt="" width="30%" height="100%"/></a>
            <div className="div_head"> 
          
         </div>
-        <div className="button-1">
-            <li id="home">
-                <a href="/"> 
-                <i className="fa-solid fa-house" style={{color:"#000000"}}></i> Home</a></li></div>
+        
         </ul>
 
     </div>
@@ -53,9 +51,9 @@ function Login() {
 
       <div className="box-0">  
     <label for="text">Username :</label>
-    <input type="Email" onChange={(e) => setname(e.target.value)} placeholder="Username"  id="text" name=" text"/><br/><br/>
+    <input type="Email" onChange={(e) => setname(e.target.value)} placeholder="Username"  id="text" name=" text" required/><br/><br/>
     <label for="number">Password :</label>
-        <input onChange={(e) => setpassword(e.target.value)} type="password" placeholder="Password...." id="password" name="pasword"/><br/><br/></div>   
+        <input onChange={(e) => setpassword(e.target.value)} type="password" placeholder="Password...." id="password" name="pasword" required/><br/><br/></div>   
     <div className="continue">
        <a><button onClick={login} id="login-page">Login</button></a></div>
     
@@ -68,10 +66,15 @@ function Login() {
 
 
     <div className="iconn-1">
-        <div className="iconn-2"> <a href="https://www.facebook.com/profile.php?id=100038200869527&mibextid=9R9pXO"> <i className="fa-brands fa-facebook"></i></a>  </div>
-        <div className="iconn-3"> <a href="https://instagram.com/abhay_thakur__00?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"><i className="fa-brands fa-instagram"></i></a> </div>
-         <div className="iconn-4"> <a href=""><i className="fa-brands fa-twitter"></i></a> </div>
-             <div className="iconn-5"> <a href=""><i className="fa-brands fa-linkedin"></i></a></div></div>
+        <div className="iconn-2">
+             <a href="https://www.facebook.com/profile.php?id=100038200869527&mibextid=9R9pXO"> <i className="fa-brands fa-facebook"></i></a>  </div>
+        <div className="iconn-3">
+             <a href="https://instagram.com/abhay_thakur__00?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"><i className="fa-brands fa-instagram"></i></a> </div>
+         <div className="iconn-4"> 
+         <a href=""><i className="fa-brands fa-twitter"></i></a> </div>
+             <div className="iconn-5">
+                 <a href=""><i className="fa-brands fa-linkedin"></i></a></div>
+                 </div> 
             
     
 </div>

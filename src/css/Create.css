@@ -33,333 +33,334 @@
       width: 25%;
       margin-top: 3%;
       
+     } */
+    
+     .butt button
+     {
+      background-color:#8758ff ;
+      margin-top: 20px;
+      padding: 8px;
+      border-radius: 5px;
+      border:none;
+      width: 80%;
+      color: white;
+      border: .5px solid #8758ff;
+     }
+     .butt button a
+     {
+      border-radius: 2px;
+      text-decoration: none;
+     color: rgb(255, 255, 255);
      }
     
-   .butt button
-   {
-    background-color:#8758ff ;
-    margin-top: 20px;
-    padding: 8px;
-    border-radius: 5px;
-    border:none;
-    width: 80%;
-    color: white;
-    border: .5px solid #8758ff;
-   }
-   .butt button a
-   {
-    border-radius: 2px;
-    text-decoration: none;
-   color: rgb(255, 255, 255);
-   }
-  
-   .butt button:hover{
-    background-color: white;
-    border: .5px solid #8758ff;
-    color:#8758ff;
-    cursor: pointer;
-   }
-  
-  form .login {
-      padding: 10%;
-      font-size: 35px;
-   }
-   input[type="password"]
-   {
-     padding: 8px;
-     color: white;
-     border-radius: 5px;
-     border: 1px solid rgb(197, 197, 197);
-     width: 60%;
+     .butt button:hover{
+      background-color: white;
+      border: .5px solid #8758ff;
+      color:#8758ff;
+      cursor: pointer;
+     }
+    
+     .loginn {
+      padding: 50px;
+      font-size: 40px;
+      font-weight: 600;
+      background: -webkit-linear-gradient(#5b0000, #ab60e0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+     }
+     input[type="passwordd"]
+     {
+       padding: 8px;
+       border-radius: 5px;
+       border: 1px solid rgb(197, 197, 197);
+       width: 60%;
+       position: relative;
+       left: 32px;
+       
+    
+     }
+    
+     .nav img
+     {
+        mix-blend-mode: multiply;
+     }
+     input[type="textt"]
+     {
+       padding: 8px;
+       border-radius: 5px;
+       border: 1px solid rgb(197, 197, 197);
+       position: relative;
+       left: 43px;
+       width: 60%;
+    
+       
+     }
+    
+     #home
+     {
+     border-radius: 10px;
      position: relative;
-     left: 32px;
+     right:50px;
      
-  
-   }
-  
-   .nav img
-   {
-      mix-blend-mode: multiply;
-   }
-   input[type="text"]
-   {
-     padding: 8px;
-     color:white;
-     border-radius: 5px;
-     border: 1px solid rgb(197, 197, 197);
-     position: relative;
-     left: 43px;
-     width: 60%;
-  
+     }
+     input[type="Number"]
+     {
+       padding: 8px;
+       border-radius: 5px;
+       border: 1px solid rgb(197, 197, 197);
+       width: 60%;
+       position: relative;
+       left: 15px;
+     }
+     .box-0
+     {
+      border-bottom: 2px solid white;
+     }
+      .icon-1
+      {
+          display: flex;
+          position: relative;
+         left: 22%;
+         width: 55%;
+         justify-content: space-between;
+         flex-wrap: wrap;
+      
+      }
+      .icon-2 a{
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 80%;
+        padding: 7px;
+        transition-duration: 0.25s;
+      color: rgb(53, 53, 255);
+    font-size: 20px;
+
+    
+    }
+    .icon-3 a
+    {
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 80%;
+        padding: 7px;
+        transition-duration: 0.25s;
+    
+      color: rgb(255, 0, 38);
+    font-size: 20px;
+    
+    }
+    .icon-4 a{
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 80%;
+        padding: 7px;
+        transition-duration: 0.25s;
+        color: rgb(0, 187, 255);
+    font-size: 20px;
+    
+    }
+    .icon-5 a{
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 80%;
+        padding: 7px;
+        transition-duration: 0.25s;
+      color:  rgb(27, 19, 255);
+    font-size: 20px;
+    
+    }
+    .icon-2 a:hover
+    {
+       outline-offset: 4px;
+       color: white;
+   background-color: rgb(0, 0, 0);
+    }
+    .icon-3 a:hover
+    { 
+       outline-offset: 4px;
+       color: white;
+   background-color: rgb(0, 0, 0);
+    }
+    .icon-4 a:hover
+    {
+       outline-offset: 4px;
+       color: white;
+       background-color: rgb(0, 0, 0);
+    }
+    .icon-5 a:hover
+    {
+       outline-offset: 4px;
+       color: white;
+       background-color: rgb(0, 0, 0);
+    }
+      .icon-2:hover 
+      {
+          animation: shake 0.25s;
+      }
+      @keyframes shake{
+          10%{
+              transform: rotate(20deg);
+          }
+          20%{
+              transform: rotate(-20deg);
+          }
+          30%{
+              transform: rotate(20deg);
+          }
+          40%{
+              transform: rotate(-20deg);
+          }
+      }
+      .icon-3:hover 
+      {
+          animation: shake 0.25s;
+      }
+      @keyframes shake{
+          10%{
+              transform: rotate(20deg);
+          }
+          20%{
+              transform: rotate(-20deg);
+          }
+          30%{
+              transform: rotate(20deg);
+          }
+          40%{
+              transform: rotate(-20deg);
+          }
+      }
+      .icon-4:hover 
+      {
+          animation: shake 0.25s;
+      }
+      @keyframes shake{
+          10%{
+              transform: rotate(20deg);
+          }
+          20%{
+              transform: rotate(-20deg);
+          }
+          30%{
+              transform: rotate(20deg);
+          }
+          40%{
+              transform: rotate(-20deg);
+          }
+      }
+      .icon-5:hover 
+      {
+          animation: shake 0.25s;
+      }
+      @keyframes shake{
+          10%{
+              transform: rotate(20deg);
+          }
+          20%{
+              transform: rotate(-20deg);
+          }
+          30%{
+              transform: rotate(20deg);
+          }
+          40%{
+              transform: rotate(-20deg);
+          }
+      }
+    
      
-   }
-  
-   #home
-   {
-   border-radius: 10px;
-   position: relative;
-   right:50px;
+     .abhay a {
+      color:rgb(75, 45, 248);
+      text-decoration: none;
+    
+    
+     }
+     .abhay
+     {
+      position: relative;
+      bottom: 20px;
+     }
    
-   }
-   input[type="Number"]
-   {
-     padding: 8px;
-     color:white;
-     border-radius: 5px;
-     border: 1px solid rgb(197, 197, 197);
-     width: 60%;
-     position: relative;
-     left: 15px;
-   }
-   .box-0
-   {
-    border-bottom: 2px solid white;
-   }
-    .icon-1
+    
+     /* .nav {
+     padding: 5px;
+     border:1px solid rgb(215, 214, 214)
+    
+    }
+    .nav ul
     {
         display: flex;
-        position: relative;
-       left: 22%;
-     bottom: 20px;
-       width: 55%;
-       justify-content: space-between;
-       flex-wrap: wrap;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+    
     
     }
-    .icon-2 a{
-      border: 1px solid rgb(0, 0, 0);
-      border-radius: 50px;
-      padding: 7px;
-      transition-duration: 0.25s;
-    color: rgb(53, 53, 255);
-  font-size: 20px;
-  
-  }
-  .icon-3 a
-  {
-      border: 1px solid rgb(0, 0, 0);
-      border-radius: 50px;
-      padding: 7px;
-      transition-duration: 0.25s;
-  
-    color: rgb(255, 0, 38);
-  font-size: 20px;
-  
-  }
-  .icon-4 a{
-      border: 1px solid rgb(0, 0, 0);
-      border-radius: 50px;
-      padding: 7px;
-      transition-duration: 0.25s;
-      color: rgb(0, 187, 255);
-  font-size: 20px;
-  
-  }
-  .icon-5 a{
-      border: 1px solid rgb(0, 0, 0);
-      border-radius: 50px;
-      padding: 7px;
-      transition-duration: 0.25s;
-    color:  rgb(27, 19, 255);
-  font-size: 20px;
-  
-  }
-  .icon-2 a:hover
-  {
-     outline-offset: 4px;
-     color: rgb(0, 0, 0);
-     background-color: white;
-  }
-  .icon-3 a:hover
-  {  color: rgb(0, 0, 0);
-     outline-offset: 4px;
-  
-     background-color: white;
-  }
-  .icon-4 a:hover
-  {
-     outline-offset: 4px;
-     color: rgb(0, 0, 0);
-     background-color: white;
-  }
-  .icon-5 a:hover
-  {
-     outline-offset: 4px;
-     color: rgb(0, 0, 0);
-     background-color: white;
-  }
-    .icon-2:hover 
-    {
-        animation: shake 0.25s;
-    }
-    @keyframes shake{
-        10%{
-            transform: rotate(20deg);
-        }
-        20%{
-            transform: rotate(-20deg);
-        }
-        30%{
-            transform: rotate(20deg);
-        }
-        40%{
-            transform: rotate(-20deg);
-        }
-    }
-    .icon-3:hover 
-    {
-        animation: shake 0.25s;
-    }
-    @keyframes shake{
-        10%{
-            transform: rotate(20deg);
-        }
-        20%{
-            transform: rotate(-20deg);
-        }
-        30%{
-            transform: rotate(20deg);
-        }
-        40%{
-            transform: rotate(-20deg);
-        }
-    }
-    .icon-4:hover 
-    {
-        animation: shake 0.25s;
-    }
-    @keyframes shake{
-        10%{
-            transform: rotate(20deg);
-        }
-        20%{
-            transform: rotate(-20deg);
-        }
-        30%{
-            transform: rotate(20deg);
-        }
-        40%{
-            transform: rotate(-20deg);
-        }
-    }
-    .icon-5:hover 
-    {
-        animation: shake 0.25s;
-    }
-    @keyframes shake{
-        10%{
-            transform: rotate(20deg);
-        }
-        20%{
-            transform: rotate(-20deg);
-        }
-        30%{
-            transform: rotate(20deg);
-        }
-        40%{
-            transform: rotate(-20deg);
-        }
-    }
-  
-   
-   .abhay a {
-    color:rgb(75, 45, 248);
-    text-decoration: none;
-  
-  
-   }
-   .abhay
-   {
-    position: relative;
-    bottom: 40px;
-   }
- 
-  
-   .nav {
-   padding: 5px;
-   border:1px solid rgb(215, 214, 214)
-  
-  }
-  .nav ul
-  {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      list-style: none;
-  
-  
-  }
-  
-  .nav ul li a {
-    color: #6d5200;
-    text-decoration: none;
-    font-size: 20px;
-   
-   
-   }
-  .div_head
-  {
-    flex-wrap: wrap;
-    display: flex; 
-  }
-  .div_head li a {
-     margin: 20px;
-  }
-  .logo
-  {
-     color: #ffb300;
-     font-size: 30px;
-     justify-content: start;
-     display: flex;
-     font-weight: 700;
-   
     
-  }
-  .nav-logo {
-     background-color: transparent;
-  }
- 
-  
-  @media only screen and (max-width:913px) {
-    form{
-  
-      width: 91.5%;
-      text-align: center;
-      border: 1px solid rgb(0, 0, 0);
-      display: inline-block;
-      margin-left: 0%;
-      margin-top: 5%;
-      border-radius: 5px;
-        
-      
-     }
-     input[type="text"]
-   {
-     padding: 8px;
-     color:white;
-     border-radius: 5px;
-     border: none;
-     position: relative;
-    left: 43px;
-     width: 60%;
-  
-     
-   }
-  
-     .icon 
-     {
-    
-      justify-content: space-evenly;
-      display: flex;
-      position: relative;
-      left: 120px;
-      width: 30%;
+    .nav ul li a {
+      color: #6d5200;
+      text-decoration: none;
       font-size: 20px;
-      top: 2px;
-      flex-wrap: wrap;  
+     
+     
+     } */
+    .div_head
+    {
+      flex-wrap: wrap;
+      display: flex; 
+    }
+    .div_head li a {
+       margin: 20px;
+    }
+    .logo
+    {
+       color: #ffb300;
+       font-size: 30px;
+       justify-content: start;
+       display: flex;
+       font-weight: 700;
+     
+      
+    }
+    .nav-logo {
+       background-color: transparent;
+    }
+   
+    
+    @media only screen and (max-width:913px) {
+      form{
+    
+        width: 91.5%;
+        text-align: center;
+        border: 1px solid rgb(0, 0, 0);
+        display: inline-block;
+        margin-left: 0%;
+        margin-top: 5%;
+        border-radius: 5px;
+          
+        
+       }
+       input[type="text"]
+     {
+       padding: 8px;
+       color:white;
+       border-radius: 5px;
+       border: none;
+       position: relative;
+      left: 43px;
+       width: 60%;
+    
+       
      }
-     .nav{
-      display: none;
-     }
-  
-  } */
+    
+       .icon 
+       {
+      
+        justify-content: space-evenly;
+        display: flex;
+        position: relative;
+        left: 120px;
+        width: 30%;
+        font-size: 20px;
+        top: 2px;
+        flex-wrap: wrap;  
+       }
+       .nav{
+        display: none;
+       }
+    
+    }

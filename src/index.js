@@ -5,7 +5,6 @@ import './css/category.css'
 import './css/home.css'
 import './css/Product.css'
 import './css/Login.css'
-import './css/Create.css'
 import './css/pay.css'
 // slick css files
 import "slick-carousel/slick/slick.css";

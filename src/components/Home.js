@@ -322,7 +322,7 @@ function Home() {
         <div className="navi">
           <h2>Get Up To 70% Off</h2>
         </div>
-        <div className="abhay">
+        <div className="abhayy">
           <div className="img-box-4">
             <div className="text">
               <h5>Save</h5>
@@ -481,11 +481,11 @@ function Home() {
             Copyright @2023 All rights reserved | The website is made with
             buyfirst
           </p>
-          <div class="icon-1">
-   <div class="icon-2"> <a href="https://www.facebook.com/profile.php?id=100038200869527&mibextid=9R9pXO"> <i class="fa-brands fa-facebook"></i></a>  </div>
-   <div class="icon-3"> <a href="https://instagram.com/abhay_thakur__00?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"><i class="fa-brands fa-instagram"></i></a> </div>
-    <div class="icon-4"> <a href=""><i class="fa-brands fa-twitter"></i></a> </div>
-        <div class="icon-5"> <a href=""><i class="fa-brands fa-linkedin"></i></a></div></div>
+          <div class="icon-100">
+   <div class="icon-20"> <a href="https://www.facebook.com/profile.php?id=100038200869527&mibextid=9R9pXO"> <i class="fa-brands fa-facebook"></i></a>  </div>
+   <div class="icon-30"> <a href="https://instagram.com/abhay_thakur__00?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"><i class="fa-brands fa-instagram"></i></a> </div>
+    <div class="icon-40"> <a href=""><i class="fa-brands fa-twitter"></i></a> </div>
+        <div class="icon-50"> <a href=""><i class="fa-brands fa-linkedin"></i></a></div></div>
         </div>
       </footer>
     </div> 

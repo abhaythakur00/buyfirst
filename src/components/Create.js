@@ -1,5 +1,6 @@
 import {useState} from "react";
 import { useNavigate } from "react-router-dom";
+import '../css/Create.css'
 
 
 
@@ -18,16 +19,17 @@ function Create() {
         <div>
             <div className="nav">
 
-                <ul>
+<ul>
+<a href="/"> 
+    <img 
+    src={process.env.PUBLIC_URL + "images/" + "abhaY.jpg"} alt="" width="30%" height="100%"/></a>
+   <div className="div_head"> 
+ 
+</div>
 
-                    <img src="abhaY.jpg" alt="" width="8%" height="5%" />
-                    <div className="div_head">
-                    </div>
-                    <div className="create-but-1">
-                        <li id="home"><a href="/"> <i className="fa-solid fa-house" style={{ color: "#000000" }}></i> Home</a></li></div>
-                </ul>
+</ul>
 
-            </div>
+</div>
 
 
 
@@ -35,15 +37,15 @@ function Create() {
             <div className="submit">
 
                 <form className="submitForm" action="action page.php" />
-                <div className="login">Create Your Account</div>
+                <div className="loginn">Create Your Account</div>
 
                 <div className="box-0">
                     <label for="name">Name : </label>
-                    <input onChange={(e) => setname(e.target.value)} type="text" placeholder="Fist and last name" id="fist and last name" name="Fist and last name " /><br /><br />
+                    <input onChange={(e) => setname(e.target.value)} type="textt" placeholder="Fist and last name" id="fist and last name" name="Fist and last name " /><br /><br />
                     <label for="Number">Mobile number: </label>
                     <input className="Number" type="Number" placeholder="Mobile number" id="Number" name="Number" /><br /><br />
                     <label for="lname">Password : </label>
-                    <input onChange={(e) => setpassword(e.target.value)} type="password" placeholder="Password" id="lname" name="lname" /><br /><br />
+                    <input onChange={(e) => setpassword(e.target.value)} type="passwordd" placeholder="Password" id="lname" name="lname" /><br /><br />
                   
                 </div>
                 <div className="butt">
@@ -51,9 +53,9 @@ function Create() {
                         <button onClick={register}>Create Account</button></a></div>
 
 
-                <p>By signing in or creating an account you are <br />
+                {/* <p>By signing in or creating an account you are <br />
                     agreeing to our Terms of Use and our <br />
-                    Privacy Policy.</p>
+                    Privacy Policy.</p> */}
                 <br /><br />
                 <p className="abhay">Already have an account?<a href="/login">Login</a></p>
 

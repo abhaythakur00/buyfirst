@@ -3,22 +3,22 @@ import Category from "../components/Category";
 export const products  =  [
   { id : '1',
     name: "New shoes",
-    price: 2999,
+    price: 899,
     desc: '',
     category : "foot",
     images : [ {
-      name : "asian.jpg",
+      name : "asian.gif",
       color : 'gola'
     },
     {
-      name : 'color-2.jpg',
+      name : '',
       color : 'gola-2'
     }
   ]
   },
   { id : '2',
     name: "New shoes 1",
-    price: 3999,
+    price: 699,
     desc: '',
     category : "foot",
     images : [ {
@@ -26,7 +26,7 @@ export const products  =  [
       color : 'gola'
     },
     {
-      name : 'color-2.jpg',
+      name : '',
       color : 'gola-2'
     }
   ]
@@ -35,7 +35,7 @@ export const products  =  [
   },
   { id : '3',
     name: "New shoes 2",
-    price: 2399,
+    price: 1200,
     desc : '',
     category : "foot",
     images : [ {
@@ -50,7 +50,7 @@ export const products  =  [
   },
   { id : '4',
     name: "New shoes 2",
-    price: 2397,
+    price: 1400,
     desc: '',
     category : "foot",
     images : [ {
@@ -58,14 +58,14 @@ export const products  =  [
       color : 'gola'
     },
     {
-      name : 'color-2.jpg',
+      name : '',
       color : 'gola-2'
     }
   ]
   },
   { id : '5',
     name: "HyperX Cloud II",
-    price: 2397,
+    price: 999,
     desc: 'Gaming Headset for PC, PS5 / PS4. Includes 7.1 Virtual Surround Sound andUSB Audio Control Box - Red (4P5M0AA)',
     category : "electronics",
     images : [ {
@@ -89,7 +89,7 @@ export const products  =  [
       color : 'gola'
     },
     {
-      name : 'color-2.jpg',
+      name : '',
       color : 'gola-2'
     }
   ]
@@ -104,7 +104,7 @@ export const products  =  [
       color : 'gola'
     },
     {
-      name : 'color-2.jpg',
+      name : '',
       color : 'gola-2'
     }
   ]
@@ -119,7 +119,7 @@ export const products  =  [
       color : 'gola'
     },
     {
-      name : 'color-2.jpg',
+      name : '',
       color : 'gola-2'
     }
   ]
@@ -134,7 +134,7 @@ export const products  =  [
       color : 'gola'
     },
     {
-      name : 'color-2.jpg',
+      name : '',
       color : 'gola-2'
     }
   ]
@@ -210,7 +210,7 @@ export const products  =  [
     color : 'gola'
   },
   {
-    name : 'color-2.jpg', 
+    name : '', 
     color : 'gola-2'
   }
 ]
@@ -225,7 +225,7 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
@@ -255,7 +255,7 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
@@ -271,7 +271,7 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
@@ -286,7 +286,7 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
@@ -301,13 +301,13 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 { id : '21',
-name: "New shoes 7",
+name: "Cap",
 price: 397,
 desc: '',
 category : "hats",
@@ -316,14 +316,14 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 
 { id : '22',
-name: "New shoes 7",
+name: "Cap",
 price: 397,
 desc: '',
 category : "hats",
@@ -332,13 +332,13 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 { id : '23',
-name: "New shoes 7",
+name: "Cap",
 price: 397,
 desc: '',
 category : "hats",
@@ -347,13 +347,13 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 { id : '24',
-name: "New shoes 7",
+name: "Cap",
 price: 397,
 desc: '',
 category : "hats",
@@ -362,13 +362,13 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 { id : '25',
-name: "New shoes 7",
+name: "Cap",
 price: 397,
 desc: '',
 category : "hats",
@@ -377,14 +377,14 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 //watch//
 { id : '26',
-name: "New shoes 7",
+name: "Watch",
 price: 397,
 desc: '',
 category : "watches",
@@ -393,13 +393,13 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 { id : '27',
-name: "New shoes 7",
+name: "Watch",
 price: 397,
 desc: '',
 category : "watches",
@@ -408,13 +408,13 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 { id : '28',
-name: "New shoes 7",
+name: "Watch",
 price: 397,
 desc: '',
 category : "watches",
@@ -423,13 +423,13 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 { id : '29',
-name: "New shoes 7",
+name: "Watch",
 price: 397,
 desc: '',
 category : "watches",
@@ -438,13 +438,13 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 { id : '30',
-name: "New shoes 7",
+name: "Watch",
 price: 397,
 desc: '',
 category : "watches",
@@ -453,13 +453,13 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 { id : '31',
-name: "New shoes 7",
+name: "Watch",
 price: 397,
 desc: '',
 category : "watches",
@@ -468,13 +468,13 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 { id : '32',
-name: "New shoes 7",
+name: "Watch",
 price: 397,
 desc: '',
 category : "watches",
@@ -483,13 +483,13 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 { id : '33',
-name: "New shoes 7",
+name: "Watch",
 price: 397,
 desc: '',
 category : "watches",
@@ -498,7 +498,7 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
@@ -506,7 +506,7 @@ images : [ {
 // woman women
 
 { id : '34',
-name: "New shoes 7",
+name: "T-shirt",
 price: 397,
 desc: '',
 category : "women",
@@ -515,13 +515,13 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 { id : '35',
-name: "New shoes 7",
+name: "T-shirt",
 price: 397,
 desc: '',
 category : "women",
@@ -530,13 +530,13 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 { id : '36',
-name: "New shoes 7",
+name: "T-shirt",
 price: 397,
 desc: '',
 category : "women",
@@ -545,13 +545,13 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 { id : '37',
-name: "New shoes 7",
+name: "T-shirt",
 price: 397,
 desc: '',
 category : "women",
@@ -560,13 +560,13 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 { id : '38',
-name: "New shoes 7",
+name: "T-shirt",
 price: 397,
 desc: '',
 category : "women",
@@ -575,13 +575,13 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 { id : '39',
-name: "New shoes 7",
+name: "T-shirt",
 price: 397,
 desc: '',
 category : "women",
@@ -590,13 +590,13 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 { id : '40',
-name: "New shoes 7",
+name: "T-shirt",
 price: 397,
 desc: '',
 category : "women",
@@ -605,13 +605,13 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]
 },
 { id : '41',
-name: "New shoes 7",
+name: "T-shirt",
 price: 397,
 desc: '',
 category : "women",
@@ -620,7 +620,7 @@ images : [ {
   color : 'gola'
 },
 {
-  name : 'color-2.jpg',
+  name : '',
   color : 'gola-2'
 }
 ]

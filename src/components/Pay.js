@@ -128,21 +128,21 @@ function Pay() {
                     </div>
                     <div className="aa">
                         <p>Card Number</p>
-                        <input type="number" id="card nunber" name="card number" />
+                        <input type="number" id="card nunber" name="card number" required/>
                     </div>
                 </div>
                 <div className="card">
                     <div className="cc">
                         <p> Expire date</p>
-                        <input type="date" id="expire" name="expire" /></div>
+                        <input type="date" id="expire" name="expire"required /></div>
                     <div className="aa">
                         <p> cvv</p> <input type="Password" id="cvv" name="cvv" /></div>
                 </div>
-
-                <div className="butt">
-                    <button onClick={payNow}>Pay Now</button>
-                    <button>Reset</button>
-                </div>
+<div className="mac">
+                <div className="butt-2">
+                    <button onClick={payNow}>Pay Now</button> </div>
+                   < div className="butt-200"> <button>Reset</button></div>
+                   </div>
             </div>
         </div>
     )

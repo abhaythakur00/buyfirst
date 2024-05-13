@@ -51,7 +51,7 @@ function Navbar(props) {
 
       <div className="icon">
         
-        <i className="fa-solid fa-bell" style= {{color:"#8758ffcc"}}></i>
+
         <a href="/cart"><i className="fa-solid fa-cart-shopping" style= {{color:"#8758ffcc"}}></i></a> <span>{props.count !==0 ? props.count : null}</span>
 
 

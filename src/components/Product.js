@@ -70,7 +70,7 @@ function Product() {
                             <div className="border-1">
                                 <h1>{p.name} </h1>
                                 <h4>{p.desc}</h4>
-                                <div className="icon-1">
+                                <div className="icon-11">
                                     <span className="fa fa-star checked"></span>
                                     <span className="fa fa-star checked"></span>
                                     <span className="fa fa-star checked"></span>
